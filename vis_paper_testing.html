@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Results" />
+        <title>Cloth Dataset</title>
+        <!-- Bootstrap core CSS -->
+        <!--link href="bootstrap.min.css" rel="stylesheet"-->
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+        <!-- Custom styles for this template -->
+        <link href="offcanvas.css" rel="stylesheet" />
+        <!--    <link rel="icon" href="img/favicon.gif" type="image/gif">-->
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="section">
+            <h1 style="text-align:center">
+            Testing Results
+            </h1>
+
+
+                    <hr />
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">
+                                Collider: 191968.obj
+                            </h5>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">Cloth material: polyester</h5>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">Cloth shape: square</h5>
+                        </div>
+                    </div>
+
+        <div class="container">
+            <div class="section">
+                <hr />
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Input</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Ground truth</h3>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/191968/input.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+                        
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/191968/gt.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                    </div>
+
+        <div class="container">
+            <div class="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">U-DNN</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">DrapeNet</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Neural Subdiv</h3>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/191968/udnn.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+                        
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/191968/drapenet.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/191968/nsubdiv.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <hr />
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">
+                                Collider: 49317.obj
+                            </h5>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">Cloth material: 95% wool + 5% lycra</h5>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">Cloth shape: square</h5>
+                        </div>
+                    </div>
+
+        <div class="container">
+            <div class="section">
+                <hr />
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Input</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Ground truth</h3>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/49317/input.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+                        
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/49317/gt.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                    </div>
+
+        <div class="container">
+            <div class="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">U-DNN</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">DrapeNet</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Neural Subdiv</h3>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/49317/udnn.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+                        
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/49317/drapenet.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/49317/nsubdiv.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <hr />
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">
+                                Collider: suitcase.obj
+                            </h5>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">Cloth material: silk</h5>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h5 style="text-align:center">Cloth shape: square</h5>
+                        </div>
+                    </div>
+
+        <div class="container">
+            <div class="section">
+                <hr />
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Input</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Ground truth</h3>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/suitcase/input.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+                        
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/suitcase/gt.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                    </div>
+
+        <div class="container">
+            <div class="section">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">U-DNN</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">DrapeNet</h3>
+                        </div>
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <h3 style="text-align:center">Neural Subdiv</h3>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center">
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/suitcase/udnn.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+                        
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/suitcase/drapenet.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                        <div class="col-md-4 padding-0 canvas-row">
+                            <model-viewer
+                                alt="Object"
+                                src="paper_testing_glb/suitcase/nsubdiv.glb"
+                                style="width: 100%; height: 250px; background-color: #ffffff;"
+                                environment-image="shared-assets/environments/moon_1k.hdr"
+                                exposure=".8"
+                                camera-orbit="90deg 90deg 105%"
+                                auto-rotate
+                                camera-controls
+                            >
+                            </model-viewer>
+                        </div>
+
+                    </div>
+
+                    <script
+                        type="module"
+                        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+                    ></script>
+                </div>
+
+                <!-- Loads <model-viewer> for modern browsers: -->
+                <script
+                    type="module"
+                    src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"
+                ></script>
+            </div>
+
+            <hr />
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
